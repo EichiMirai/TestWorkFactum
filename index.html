@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230206064107">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__logo logo-header">
+						<div class="_icon-logo"></div>
+						<div class="logo-header__text">
+							<div class="_icon-bukh"></div>
+							<div class="_icon-outsort"></div>
+						</div>
+					</div>
+					<div class="top-header__location location-header">
+						<div class="_icon-header-location"></div>
+						<div class="top-header__adress">пр. Р.Кошкарбаева, дом 31</div>
+					</div>
+					<div class="top-header__contact contact-header">
+						<div class="_icon-header-phone"></div>
+						<div class="contact-header__phones">
+							<a class="contact-header__phone">+7 701 525 09 63,</a>
+							<a class="contact-header__phone">+7 701 525 09 62</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__body header-body">
+				<div class="header__container">
+					<nav class="header__menu menu">
+						<div class="menu__icon"><span></span></div>
+						<div class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Что входит в стоимость</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+								<div class="menu__phone">
+
+									<div class="top-header__location">
+										<div class="_icon-header-location"></div>
+										<div class="top-header__adress">пр. Р.Кошкарбаева, дом 31</div>
+									</div>
+
+									<div class="top-header__contact contact-header">
+										<div class="_icon-header-phone"></div>
+										<div class="contact-header__phones">
+											<a class="contact-header__phone">+7 701 525 09 63,</a>
+											<a class="contact-header__phone">+7 701 525 09 62</a>
+										</div>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="header-body__line"></div>
+			</div>
+
+
+
+		</header>
+		<main class="page">
+
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230206064107" />
+			<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230206064107"></script>
+
+			<section>
+				<style>
+					.swiper {
+						width: 100%;
+						max-height: 485px;
+					}
+
+					.swiper-slide {
+						text-align: center;
+						font-size: 18px;
+						background-color: aliceblue;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+
+					.swiper-slide img {
+						width: 100%;
+						object-fit: cover;
+					}
+
+					.swiper-button-next,
+					.swiper-rtl .swiper-button-prev {
+						right: 20px !important;
+						color: white;
+						left: auto;
+					}
+
+					.swiper-button-prev,
+					.swiper-rtl .swiper-button-next {
+						left: 20px !important;
+						color: white;
+						right: auto;
+					}
+
+					.swiper-button-next,
+					.swiper-button-prev {
+						z-index: 1;
+					}
+
+					.swiper-pagination-bullet-active {
+						background-color: #F55D3E;
+					}
+
+					.swiper-button-next:after,
+					.swiper-button-prev:after {
+						font-family: swiper-icons;
+						font-size: 40px;
+						text-transform: none !important;
+						letter-spacing: 0;
+						font-variant: initial;
+						line-height: 1;
+					}
+				</style>
+
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><picture style="width: 100%"><source srcset="img/back.webp" type="image/webp"><img src="img/back.png"></picture></div>
+						<div class="swiper-slide"><picture style="width: 100%"><source srcset="img/back.webp" type="image/webp"><img src="img/back.png"></picture></div>
+						<div class="swiper-slide"><picture style="width: 100%"><source srcset="img/back.webp" type="image/webp"><img src="img/back.png"></picture></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+
+				<script>
+					var swiper = new Swiper(".mySwiper", {
+						spaceBetween: 30,
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+						pagination: {
+							el: ".swiper-pagination",
+						}
+					});
+				</script>
+			</section>
+			<section class="features">
+				<div class="features__container">
+					<div class="features__block">
+						<picture><source srcset="img/stars.webp" type="image/webp"><img src="img/stars.png" alt=""></picture>
+						<p class="features__text">Многолетний опыт</p>
+					</div>
+					<div class="features__block">
+						<picture><source srcset="img/success.webp" type="image/webp"><img src="img/success.png" alt=""></picture>
+						<p class="features__text">Мы несем гарантию на оказываемые услуги</p>
+					</div>
+					<div class="features__block">
+						<picture><source srcset="img/snowflake.webp" type="image/webp"><img src="img/snowflake.png" alt=""></picture>
+						<p class="features__text">Профессиональные бухгалтерские услуги для всех сфер бизнеса</p>
+					</div>
+				</div>
+
+				<div class="feature__body body-feature">
+					<div class="body-feature__container">
+						<div class="body-feature__image image-feature">
+							<picture><source srcset="img/mainimg.webp" type="image/webp"><img style="width: 100%" src="img/mainimg.png" alt=""></picture>
+							<picture><source srcset="img/corner.webp" type="image/webp"><img class="corner" src="img/corner.png" alt=""></picture>
+							<div class="feature__large-circle image-feature__circle"></div>
+							<div class="feature__small-circle image-feature__small-circle"></div>
+						</div>
+						<div class="body-feature__text text-feature">
+							<h2 class="text-feature__title title">Бухгалтерские услуги для
+								<span>малого и среднего</span> бизнеса
+							</h2>
+							<p class="text-feature__sub-title">Оказание полного спектра бухгалтерских услуг для Вашей компании. Профессионализм, индивидуальный подход - стиль нашей работы. Мы всё сделаем за Вас!<br><br>
+								Опыт нашей квалифицированной команды составляет более 10 лет. Мы предоставляем своим клиентам все виды бухгалтерских услуг, необходимых для работы Вашей компании. Это могут быть как разовые услуги, так и комплексное обслуживание на основании договора.<br><br>
+								С нами легко и надежно!</p>
+						</div>
+						<div class="feature__large-circle text-feature__circle"></div>
+						<div class="feature__small-circle text-feature__small-circle"></div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<h1 class="title services__title">Услуги</h1>
+				<div class="services__container">
+					<div class="services__block block-service">
+						<div class="block-service__img">
+							<picture><source srcset="img/bukh-service.webp" type="image/webp"><img src="img/bukh-service.png" alt="Бухгалтерские услуги"></picture>
+						</div>
+						<div class="block-service__title">Бухгалтерские услуги</div>
+						<div class="block-service__btn btn">Подробнее</div>
+					</div>
+					<div class="services__block block-service">
+						<div class="block-service__img">
+							<picture><source srcset="img/add-service.webp" type="image/webp"><img src="img/add-service.png" alt="Дополнительные услуги"></picture>
+						</div>
+						<div class="block-service__title">Дополнительные услуги</div>
+						<div class="block-service__btn btn">Подробнее</div>
+					</div>
+					<div class="services__block block-service">
+						<div class="block-service__img">
+							<picture><source srcset="img/bukh-astana.webp" type="image/webp"><img src="img/bukh-astana.png" alt="Бухгалтерские услуги"></picture>
+						</div>
+						<div class="block-service__title">Бухгалтерские услуги <br>в Астане</div>
+						<div class="block-service__btn btn">Подробнее</div>
+					</div>
+				</div>
+			</section>
+			<section class="price">
+				<div class="price__container">
+
+
+
+					<div class="price-circle__container">
+						<div class="price__first-circle-row first-row">
+							<div class="feature__large-circle first-row__circle">
+								<div class="row-block">
+									<div class="first-row__title">
+										Удобство
+									</div>
+									<ul class="first-row__list">
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">На понятном языке</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Почти без отдыха</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Всегда на связи</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="price__second-circle-row second-row">
+							<div class="feature__large-circle second-row__circle">
+								<div class="row-block">
+									<div class="first-row__title">
+										Удобство
+									</div>
+									<ul class="first-row__list">
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">На понятном языке</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Почти без отдыха</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Всегда на связи</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="feature__large-circle second-row__circle">
+								<div class="row-block">
+									<div class="first-row__title">
+										Удобство
+									</div>
+									<ul class="first-row__list">
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">На понятном языке</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Почти без отдыха</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Всегда на связи</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="price__third-circle-row third-row">
+
+							<div class="feature__large-circle third-row__circle">
+								<div class="row-block">
+									<div class="first-row__title">
+										Удобство
+									</div>
+									<ul class="first-row__list">
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">На понятном языке</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Почти без отдыха</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Всегда на связи</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="feature__large-circle third-row__circle">
+								<div class="row-block">
+									<div class="first-row__title">
+										Удобство
+									</div>
+									<ul class="first-row__list">
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">На понятном языке</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Почти без отдыха</a>
+										</li>
+										<li class="first-row__item">
+											<div class="_icon-galka"></div> <a class="first-row__link">Всегда на связи</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="price__block">
+						<div class="price__text title">Что входит в
+							стоимость
+							обслуживания</div>
+						<picture><source srcset="img/what.webp" type="image/webp"><img src="img/what.png" alt=""></picture>
+					</div>
+				</div>
+			</section>
+			<section class="work">
+
+				<div class="work__container">
+					<div class="title work__title">Как ведут бухгалтерский учет наши бухгалтеры?</div>
+
+					<div data-tabs class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Документооборот</button>
+							<button type="button" class="tabs__title">Бухгалтерский учет</button>
+							<button type="button" class="tabs__title">Зарплаты и кадры</button>
+							<button type="button" class="tabs__title">Работа с контрагентами</button>
+							<button type="button" class="tabs__title">Работа в клиент банке</button>
+							<button type="button" class="tabs__title">Налоги и отчетность</button>
+						</nav>
+						<div data-tabs-body class="tabs__content content-tab">
+							<div class="tabs__body">
+
+								<div class="content-tab__body">
+
+									<div class="_icon-calculator"></div>
+									<div class="content-tab__text">
+										<b>Наша работа:</b><br>
+										С заранее согласованной периодичностью (как правило, раз в месяц) наш курьер забирает у Вас первичную документацию. Наши бухгалтеры бережно раскладывают документы по папкам и заводят их в информационную базу 1С.<br>
+										По истечении отчетного/налогового периода и занесения всей документации в базу мы передаем ее всю в сшитом виде обратно клиенту.
+									</div>
+								</div>
+
+
+							</div>
+							<div class="tabs__body">
+								<div class="content-tab__body">
+
+									<div class="_icon-calculator"></div>
+									<div class="content-tab__text">
+										<b>Первый таб:</b><br>
+										С заранее согласованной периодичностью (как правило, раз в месяц) наш курьер забирает у Вас первичную документацию. Наши бухгалтеры бережно раскладывают документы по папкам и заводят их в информационную базу 1С.<br>
+										По истечении отчетного/налогового периода и занесения всей документации в базу мы передаем ее всю в сшитом виде обратно клиенту.
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="content-tab__body">
+
+									<div class="_icon-calculator"></div>
+									<div class="content-tab__text">
+										<b>Второй таб:</b><br>
+										С заранее согласованной периодичностью (как правило, раз в месяц) наш курьер забирает у Вас первичную документацию. Наши бухгалтеры бережно раскладывают документы по папкам и заводят их в информационную базу 1С.<br>
+										По истечении отчетного/налогового периода и занесения всей документации в базу мы передаем ее всю в сшитом виде обратно клиенту.
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="content-tab__body">
+
+									<div class="_icon-calculator"></div>
+									<div class="content-tab__text">
+										<b>Третий таб:</b><br>
+										С заранее согласованной периодичностью (как правило, раз в месяц) наш курьер забирает у Вас первичную документацию. Наши бухгалтеры бережно раскладывают документы по папкам и заводят их в информационную базу 1С.<br>
+										По истечении отчетного/налогового периода и занесения всей документации в базу мы передаем ее всю в сшитом виде обратно клиенту.
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="content-tab__body">
+
+									<div class="_icon-calculator"></div>
+									<div class="content-tab__text">
+										<b>Четвертый таб:</b><br>
+										С заранее согласованной периодичностью (как правило, раз в месяц) наш курьер забирает у Вас первичную документацию. Наши бухгалтеры бережно раскладывают документы по папкам и заводят их в информационную базу 1С.<br>
+										По истечении отчетного/налогового периода и занесения всей документации в базу мы передаем ее всю в сшитом виде обратно клиенту.
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="content-tab__body">
+
+									<div class="_icon-calculator"></div>
+									<div class="content-tab__text">
+										<b>Пятый таб:</b><br>
+										С заранее согласованной периодичностью (как правило, раз в месяц) наш курьер забирает у Вас первичную документацию. Наши бухгалтеры бережно раскладывают документы по папкам и заводят их в информационную базу 1С.<br>
+										По истечении отчетного/налогового периода и занесения всей документации в базу мы передаем ее всю в сшитом виде обратно клиенту.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="feature__large-circle work__circle"></div>
+				<div class="feature__small-circle work__small-circle"></div>
+
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+
+					<div class="contacts__info info-contact">
+						<h1 class="title info-contact__title">Контакты</h1>
+						<ul class="info-contact__list">
+							<li class="info-contact__item">
+								<div class="_icon-header-phone"></div>
+								<div class="info-contact__phones">
+									<div class="info-contact__phone">+7 701 525 09 63 Наталья</div>
+									<div class="info-contact__phone">+7 701 525 09 62 Евгения</div>
+								</div>
+							</li>
+							<li class="info-contact__item">
+								<div class="_icon-header-location"></div>
+								Казахстан, г. Астана, пр. Р.Кошкарбаева, дом 31
+							</li>
+							<li class="info-contact__item ">
+								<div class="_icon-email"></div>
+								buh.autsorsing@mail.ru
+							</li>
+						</ul>
+						<div class="info-contact__location-map">
+							<iframe class="info-contact__inner-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5007.964854473452!2d71.48263172835372!3d51.127232168297674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245834ae8230c93%3A0x371da07e8766bb92!2z0JbQmiDQndGD0YAg0JDRgdC_0LDQvSAy!5e0!3m2!1sru!2skz!4v1675605027752!5m2!1sru!2skz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+
+
+
+					<form class="contacts__form form-contact">
+						<div class="form-contact__container">
+							<h1 class="title form-contact__title">Оставить заявку</h1>
+							<div class="form-contact__inputs">
+								<label for="username">Ваше имя</label>
+								<input id="username" type="text" class="form-contact__name" placeholder="Иван Иванов">
+								<label for="phone">Ваш номер</label>
+								<input id="phone" type="text" class="form-contact__phone" placeholder="+7 700 700 70 70">
+								<label for="email">Ваша почта</label>
+								<input id="email" type="text" class="form-contact__email" placeholder="info@mail.com">
+							</div>
+							<button type="submit" class="btn form-contact__btn">Отправить</button>
+							<p class="form-contact__agree">Нажимая на кнопку вы соглашаетесь на обработку персональных данных в соответствии с политикой конфиденциальности</p>
+						</div>
+					</form>
+				</div>
+
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="feature__small-circle footer__small-circle"></div>
+
+			<div class="footer__container">
+
+				<div class="feature__large-circle footer__circle"></div>
+
+
+				<div class="footer__logo logo-footer">
+					<div class="logo-footer__all">
+						<div class="_icon-logo"></div>
+						<div class="logo-footer__text">
+							<div class="_icon-bukh"></div>
+							<div class="_icon-outsort"></div>
+						</div>
+					</div>
+					<div class="logo-footer__bottom">
+						2021-2022. Бухгалтерский Аутосорсинг
+					</div>
+				</div>
+
+				<nav class="footer__menu menu-footer">
+					<ul class="menu-footer__list">
+						<li class="menu-footer__item"><a href="" class="menu-footer__link">О нас</a></li>
+						<li class="menu-footer__item"><a href="" class="menu-footer__link">Услуги</a></li>
+						<li class="menu-footer__item"><a href="" class="menu-footer__link">Цены</a></li>
+						<li class="menu-footer__item"><a href="" class="menu-footer__link">Что входит в стоимость</a></li>
+						<li class="menu-footer__item"><a href="" class="menu-footer__link">FAQ</a></li>
+						<li class="menu-footer__item"><a href="" class="menu-footer__link">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<div class="footer__contact contact-footer">
+					<div class="contact-footer__phone">+7 701 525 09 63</div>
+					<div class="contact-footer__madeBy">Сделано в FACTUM</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230206064107"></script>
+</body>
+
+</html>
